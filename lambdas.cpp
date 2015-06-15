@@ -5,10 +5,12 @@
 #include <algorithm>
 using namespace std;
 
+// Example of the old way to get reverse sorting
 bool reverse_order(const int& first, const int& second) {
   return first > second;
 }
 
+// Utility to print out the vectors
 void print(const vector<int> & numbers) {
   for (const auto & number : numbers) {
     cout << number << ", ";

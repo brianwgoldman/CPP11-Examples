@@ -18,7 +18,7 @@ void create_a_range(const int target_size, vector<int> & return_by_reference) {
   }
 }
 
-// C++11 is smart enough to realize that "result" is created
+// C++11 is smart enough to realize that "result" is created in
 // this function and returned. Therefore it doens't need to
 // make a copy when returning, it can just "move" the contents
 // of the vector
@@ -56,7 +56,7 @@ int main() {
     return_checksum += result[target_size/2];
   }
   steady_clock::time_point stop_return = steady_clock::now();
-  auto return_seconds = std::chrono::duration<double>(stop_reference - start_reference).count();
+  auto return_seconds = std::chrono::duration<double>(stop_return - start_return).count();
 
   cout << "Return by reference took  : " << reference_seconds << endl;
   cout << "Return with move semantics: " << return_seconds << endl;
