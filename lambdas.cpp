@@ -44,7 +44,9 @@ int main() {
 
   int target = 7;
   // Create a lambda named "from_target" which captures a reference to "target"
-  auto from_target = [&target](const int& first, const int& second) { return abs(target-first) < abs(target-second); };
+  auto from_target = [&target](const int& first, const int& second) {
+    return abs(target-first) < abs(target-second);
+  };
   target = 3;
   sort(numbers.begin(), numbers.end(), from_target);
 
