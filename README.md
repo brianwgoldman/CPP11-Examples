@@ -18,3 +18,5 @@ These examples are by no means exhaustive. Some big omitted features:
  * Variadic templates
  * decltype
  * a whole lot more STL stuff
+
+For more complete listing of features, see [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B11).
