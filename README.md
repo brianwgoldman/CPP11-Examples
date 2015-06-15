@@ -8,10 +8,12 @@ In order to use C++11 you will need at least:
 
 All three have been adding features incrementally,
 so some advanced features may not be available until later releases.
+To enable C++11 features, you have to include either the original
+-std=c++0x or the new -std=c++11 flag to your compile statement.
 
 These examples are by no means exhaustive. Some big omitted features:
- * Regex
  * Concurrency
+ * Regex
  * constexpr
  * Variadic templates
  * decltype
