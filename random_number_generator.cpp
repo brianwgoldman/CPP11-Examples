@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <algorithm>
 using namespace std;
 
 // Creates an alias for the Mersenne Twister named "Random"
@@ -41,5 +42,8 @@ int main() {
     cout << int_values[i] + double_values[i] << ", ";
   }
   cout << endl;
+
+  // Shuffle a data structure
+  shuffle(int_values.begin(), int_values.end(), engine);
   return 0;
 }
